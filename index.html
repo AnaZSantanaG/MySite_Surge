@@ -1,1 +1,98 @@
-<h1>Desplegado con Github Actions y Surge</h1><p>Hola desde mi WSL</p>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primer Parcial Electiva2</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            background-color:  #764ba2;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #333;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 2.5rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.10);
+            text-align: center;
+            max-width: 400px;
+            width: 90%;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        h1 {
+            color: #4a148c;
+            margin-bottom: 0.5rem;
+            font-size: 1.8rem;
+        }
+        h3 {
+            color: #1b18c0;
+            margin-bottom: 0.5rem;
+            font-size: 1rem;
+        }
+
+        .matricula {
+            color: #666;
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+            display: block;
+        }
+
+        .status-badge {
+            background: #e1f5fe;
+            color: #0288d1;
+            padding: 8px 15px;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            display: inline-block;
+            margin-top: 10px;
+            border: 1px solid #0288d1;
+        }
+
+        .divider {
+            height: 2px;
+            background: #eee;
+            margin: 1.5rem 0;
+        }
+
+        p {
+            line-height: 1.6;
+            font-size: 1rem;
+        }
+
+        span.highlight {
+            color: #764ba2;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h1>Ana Z Santana G</h1>
+        <span class="matricula">Matricula: 2024-2153</span>
+        
+        <div class="divider"></div>
+        <h3>Electiva 2 - Elvys Cruz</h3>
+        <p>Actualmente estoy configurando un entorno de <strong>CI</strong>.</p>
+        
+        <div class="status-badge">
+            Desplegando en Surge.sh
+        </div>
+
+        <p style="font-size: 0.8rem; color: #888; margin-top: 2rem;">
+            Powered by GitHub Actions & WSL
+        </p>
+    </div>
+
+</body>
+</html>
