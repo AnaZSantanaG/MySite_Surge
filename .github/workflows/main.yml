@@ -1,0 +1,17 @@
+name:
+on: [push]
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Install Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
+    - name: Install Surge
+      run: npm install -g surge
+    - name: Deploy to Surge
+      run: surge ./ MySite_Surge.sh --token ${{ secrets.SURGE_TOKEN}} --project ./
+      env:
+        SURGE_LOGIN: ${{ secrets.SURGE_LOGIN}}
